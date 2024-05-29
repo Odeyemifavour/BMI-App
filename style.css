@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(50deg, #72DBD7, #BAC8C7) ;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container h2
+{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+.bmiField
+{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: #72DBD7;
+    padding: 4em ;
+    border-radius: 50px;
+    border: 2px solid olivedrab;
+}
+.bmiField form
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.bmiField form h4
+{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.bmiField form label
+{
+    font-weight: 800;
+    margin: 0.5em 0;
+}
+.bmiField form input
+{
+    width: 30%;
+    margin:0.5em auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 10px;
+}
+.bmiField form input:hover
+{
+    background-color:#72DBD7 ;
+    border: 1px solid whitesmoke;
+}
+.bmiField form button
+{
+    width: 20%;
+    padding: 10px;
+    margin: 1em 0;
+    background:#72DBD7 ;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+.bmiField form button:hover
+{
+    background-color: white;
+    color: #72DBD7;
+}
+.bmiField  a 
+{
+    color: #72DBD7;
+    font-size:12px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.container p
+{
+    background: black;
+    color:white;
+    padding: 20px;
+    margin: 2em 0;
+    border-radius: 20px;
+    border: 1px solid olivedrab;
+}
+@media screen and (max-width:600px) {
+    .container .bmiField
+    {
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+    }
+    .container .bmiField form  input  
+    {
+        width: 60%;
+    }
+    .container .bmiField button 
+    {
+        width: 50%;
+    }
+    .container .bmiField a 
+    {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:900px) {
+    .container .bmiField
+    {
+        width: 80%;
+        margin: auto;
+        border-radius: 50px;
+    }
+    .container .bmiField form  input  
+    {
+        width: 40%;
+    }
+    .container .bmiField button 
+    {
+        width: 30%;
+    }
+    .container .bmiField a 
+    {
+        font-size: 12px;
+    }
+
+}

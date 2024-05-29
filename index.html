@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BMI CALCULATOR</h2>
+        <div class="bmiField">
+            
+            <form action="">
+                <h4>fill in the following</h4>
+                <label for="weight">Weight:</label>
+                <input type="number" name="weight" id="userWeightValue" placeholder="enter your weight(kg)" required autocomplete="" autofocus>
+                <label for="height">Height:</label>
+                <input type="number" name="height" id="userHeightValue" placeholder="enter your height(m)" required autocomplete="" >
+                <button type="button" id="userBtn" onclick="calcBMI()" >submit</button>
+            </form>
+            <a href="https://www.centerwellprimarycare.com/en/resources/body-mass-index-health-tips.html">check here for health tips...</a>
+        </div>
+        <p id="bmiResult" style="display: none;"> Your Body Mass Index(BMI) is: <span id="displayBMI"></span>kg/m2</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
